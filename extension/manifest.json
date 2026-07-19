@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "IND Sponsor Checker",
+  "version": "1.0.0",
+  "description": "Check whether a company is an IND-recognised visa sponsor for work in the Netherlands. Highlight a name or search from the toolbar.",
+  "permissions": ["contextMenus", "storage"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "IND Sponsor Checker — search the register",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "check-selection": {
+      "suggested_key": {
+        "default": "Alt+Shift+S",
+        "mac": "Alt+Shift+S"
+      },
+      "description": "Check the highlighted text against the IND sponsor register"
+    }
+  }
+}

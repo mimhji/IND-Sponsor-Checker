@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>IND Sponsor Checker</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <span class="logo">✓</span>
+        <div>
+          <h1>IND Sponsor Checker</h1>
+          <p class="tag">Recognised sponsors for work · Netherlands</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="search">
+      <input
+        id="q"
+        type="text"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="Company name or KvK number…"
+        autofocus
+      />
+      <button id="clear" title="Clear" aria-label="Clear">✕</button>
+    </div>
+
+    <div id="status" class="status" aria-live="polite"></div>
+    <div id="results" class="results"></div>
+
+    <footer>
+      <span id="meta">Loading register…</span>
+      <a
+        href="https://ind.nl/en/public-register-recognised-sponsors/public-register-work"
+        target="_blank"
+        rel="noreferrer noopener"
+        >official register ↗</a
+      >
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
