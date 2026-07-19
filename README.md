@@ -6,6 +6,10 @@ How to use:
 https://github.com/user-attachments/assets/73c5a0da-5019-41b3-a46c-cdf14e0fbf1d
 
 
+### Nice source of Visa sponsoring jobs
+https://www.welcome-to-nl.nl/jobs/
+
+---
 
 A Chrome extension to quickly check whether a company is an **IND-recognised
 sponsor for work** in the Netherlands — the official list of employers allowed
