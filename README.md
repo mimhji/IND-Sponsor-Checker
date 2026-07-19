@@ -1,5 +1,12 @@
 # IND Sponsor Checker
 
+How to use:
+-> *Remember to enable **developer mode** in extentions page in chrome*
+
+https://github.com/user-attachments/assets/73c5a0da-5019-41b3-a46c-cdf14e0fbf1d
+
+
+
 A Chrome extension to quickly check whether a company is an **IND-recognised
 sponsor for work** in the Netherlands — the official list of employers allowed
 to sponsor work/knowledge-migrant visas.
